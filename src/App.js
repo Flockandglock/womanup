@@ -9,10 +9,13 @@ import EditTask from './components/EditTask/EditTask';
 
 
 function App() {
+    /**
+     * список стартовых задач
+     */
     const tasksArr = [
-        {id: 1, complited: false, title: 'Create tz', descr: 'some text', date: '12-12-2022', file: ''},
-        {id: 2, complited: true, title: 'Get item', descr: 'fetching item', date: '02-12-2022', file: ''},
-        {id: 3, complited: false, title: 'Come to home', descr: 'go throu to the forest', date: '14-04-2023', file: ''}
+        { complited: false, title: 'Create tz', descr: 'some text', date: '12-12-2022', file: ''},
+        { complited: true, title: 'Get item', descr: 'fetching item', date: '02-12-2022', file: ''},
+        { complited: false, title: 'Come to home', descr: 'go throu to the forest', date: '14-04-2023', file: ''}
     ];
 
     const [title, setTitle] = useState('');
